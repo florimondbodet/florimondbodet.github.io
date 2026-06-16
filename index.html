@@ -1,36 +1,147 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html>
 <html lang="fr">
 <head>
-	<title>Stage officiel des pompiers de Morlais</title>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<link href="style.css" rel="stylesheet" type="text/css"/>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Accueil — Florimond Bodet</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-	<div id="menu">
-		<h1>Sapeurs pompiers de Morlais</h1>
-		<ul>
-			<li><a href="./pages/centre.html">Le centre</a></li>
-			<li><a href="./pages/stats.html">Les stats </a></li>
-		</ul>
-	</div>
-	
-	<div id="centre">
-		<fieldset>
-		<legend>Comment appeler les pompiers ?</legend>
-		<h2>Composer le 18 ou le 112 (numéro d'urgence européen).</h2>
-		<h2>Composer uniquement ces numéros pour les urgences graves</h2>
-		<h2>Autres numéros d'urgence : 15 samu - 17 police</h2>
-		<h2>En cas de sinistre, indiquer :</h2>
-		<ul>
-			<li class="cligno">La nature du sinistre</li>
-			<li class="cligno">Le lieu</li>
-			<li class="cligno">Le nombre de victimes et leurs états</li>
-		</ul>
-		<center>
-		<!--photographie du centre du secours -->
-		<img src="./photos/centre.jpg" alt="centre de pompiers" /> 
-		</center>
-		</fieldset>
-	</div>
+
+<div class="bg-layer"></div>
+<div class="bg-grid"></div>
+
+<!-- SCROLLBAR VOITURE -->
+<div class="car-scrollbar">
+    <div class="car-track"></div>
+    <div class="car-track-progress"></div>
+    <img src="image_lmp2.png" class="car-thumb" alt="LMP2">
+</div>
+
+<!-- NAV -->
+<nav id="main-nav">
+    <ul class="nav-links">
+        <li><a href="index.html" class="active">Accueil</a></li>
+        <li><a href="projets.html">Projets</a></li>
+        <li><a href="apropos.html">À propos</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-logo">
+        <img src="FB_Logo_Black.png" alt="FB Logo">
+    </div>
+</nav>
+
+<!-- HERO -->
+<header id="hero">
+    <div class="hero-inner">
+
+        <!-- Colonne gauche : photo -->
+        <div class="hero-left reveal">
+            <div class="hero-photo-wrap">
+                <img src="IMG_7361.jpg" class="hero-photo" alt="Florimond Bodet"
+                     onerror="this.parentElement.innerHTML='<div class=\'photo-placeholder\'>FB</div>'">
+            </div>
+            <div class="hero-tag">
+                <span class="tag-dot"></span>
+                BUT 1 — Science des Données
+            </div>
+        </div>
+
+        <!-- Colonne droite : texte -->
+        <div class="hero-right reveal" style="transition-delay:0.1s">
+            <h1>Florimond<br><span>Bodet</span></h1>
+
+            <p class="hero-desc">
+                Je suis Florimond Bodet, 18 ans, étudiant en première année de BUT Science des Données.
+                Au cours de ma formation, j'ai acquis les bases en analyse de données, statistiques
+                et visualisation à travers différents projets académiques.
+            </p>
+
+            <p class="hero-desc" style="margin-top: -8px;">
+                Rigoureux et curieux, je m'intéresse particulièrement à la manière dont les données
+                peuvent être exploitées pour aider à la prise de décision. Mon objectif à terme :
+                évoluer dans un environnement lié à la data, idéalement dans le sport automobile.
+            </p>
+
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-num">12</span>
+                    <span class="stat-label">Projets BUT</span>
+                </div>
+                <div class="stat-sep"></div>
+                <div class="stat-item">
+                    <span class="stat-num">1<sup>re</sup></span>
+                    <span class="stat-label">Année</span>
+                </div>
+            
+
+            <div class="hero-actions">
+                <a href="CV Florimond Bodet été2026 v1.pdf" class="btn btn-primary">Télécharger mon CV</a>
+                <a href="projets.html" class="btn btn-ghost">Voir mes projets</a>
+            </div>
+        </div>
+
+    </div>
+</header>
+
+<!-- SECTION : aperçu projets -->
+<section class="section home-projects-section">
+    <div class="section-header reveal">
+        <span class="section-label">BUT Science des Données</span>
+        <h2>Quelques projets</h2>
+    </div>
+    <div class="home-projects-grid">
+        <div class="home-project-card reveal">
+            <div class="hpc-icon">📊</div>
+            <div class="hpc-body">
+                <h3>Analyse & Reporting</h3>
+                <p>Analyse complète de datasets, mise en forme de rapports et visualisations synthétiques.</p>
+            </div>
+        </div>
+        <div class="home-project-card reveal" style="transition-delay:0.07s">
+            <div class="hpc-icon">🗄️</div>
+            <div class="hpc-body">
+                <h3>Bases de données</h3>
+                <p>Conception de schémas relationnels, implémentation SQL et reporting depuis une BDD.</p>
+            </div>
+        </div>
+        <div class="home-project-card reveal" style="transition-delay:0.14s">
+            <div class="hpc-icon">📈</div>
+            <div class="hpc-body">
+                <h3>Power BI & Datavis</h3>
+                <p>Dashboards interactifs, visualisation des données Parcoursup et reporting dynamique.</p>
+            </div>
+        </div>
+        <div class="home-project-card reveal" style="transition-delay:0.21s">
+            <div class="hpc-icon">📉</div>
+            <div class="hpc-body">
+                <h3>Modélisation statistique</h3>
+                <p>Régression sur données réelles, estimation, échantillonnage et analyse exploratoire.</p>
+            </div>
+        </div>
+    </div>
+    <div class="home-projects-cta reveal">
+        <a href="projets.html" class="btn btn-ghost">Voir tous les projets →</a>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="footer-logo">
+        <img src="FB_Logo_Black.png" alt="FB">
+    </div>
+    <span class="footer-copy">© 2026 Florimond Bodet — Tous droits réservés</span>
+</footer>
+
+<script src="scrollbar.js"></script>
+<script>
+const reveals = document.querySelectorAll('.reveal');
+const obs = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+}, { threshold: 0.1 });
+reveals.forEach(el => obs.observe(el));
+</script>
 </body>
 </html>
