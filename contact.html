@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Florimond Bodet</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="bg-layer"></div>
+<div class="bg-grid"></div>
+
+<div class="car-scrollbar">
+    <div class="car-track"></div>
+    <div class="car-track-progress"></div>
+    <img src="image_lmp2.png" class="car-thumb" alt="LMP2">
+</div>
+
+<nav id="main-nav">
+    <ul class="nav-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="projets.html">Projets</a></li>
+        <li><a href="apropos.html">À propos</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+    <div class="nav-logo"><img src="FB_Logo_Black.png" alt="FB Logo"></div>
+</nav>
+
+<header class="small-hero">
+    <span class="section-label">Travaillons ensemble</span>
+    <h1>Contact</h1>
+</header>
+
+<section class="section" style="padding-top:24px;">
+    <div class="contact-layout reveal">
+
+        <div class="contact-info">
+            <h2>Me contacter</h2>
+            <p>
+            Pour toutes demandes, ci-dessous les différents moyen de me contacter.
+            </p>
+            <div class="contact-links">
+                <a href="mailto:florimond.bodet@gmail.com">
+                    <span class="link-icon">✉️</span>
+                    <span>
+                        <strong>Email</strong><br>
+                        <small>florimond.bodet@gmail.com</small>
+                    </span>
+                </a>
+                <a href="https://www.linkedin.com/in/florimond-bodet-532749394/?skipRedirect=true" target="_blank">
+                    <span class="link-icon">🔗</span>
+                    <span>
+                        <strong>LinkedIn</strong><br>
+                        <small>Florimond Bodet</small>
+                    </span>
+                </a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <div class="footer-logo"><img src="FB_Logo_Black.png" alt="FB"></div>
+    <span class="footer-copy">© 2026 Florimond Bodet</span>
+</footer>
+
+<script src="scrollbar.js"></script>
+<script>
+const reveals = document.querySelectorAll('.reveal');
+const obs = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+}, { threshold: 0.1 });
+reveals.forEach(el => obs.observe(el));
+</script>
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>À propos — Florimond Bodet</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="bg-layer"></div>
+<div class="bg-grid"></div>
+
+<div class="car-scrollbar">
+    <div class="car-track"></div>
+    <div class="car-track-progress"></div>
+    <img src="image_lmp2.png" class="car-thumb" alt="LMP2">
+</div>
+
+<nav id="main-nav">
+    <ul class="nav-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="projets.html">Projets</a></li>
+        <li><a href="apropos.html" class="active">À propos</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-logo"><img src="FB_Logo_Black.png" alt="FB Logo"></div>
+</nav>
+
+<header class="small-hero">
+    <span class="section-label">Qui suis-je ?</span>
+    <h1>À propos</h1>
+</header>
+
+<section class="section about-page" style="padding-top:24px;">
+
+    <!-- Bloc identité -->
+    <div class="about-identity reveal">
+        <div class="about-photo-wrap">
+            <img src="IMG_7361.jpg" class="about-photo" alt="Florimond Bodet"
+                 onerror="this.parentElement.innerHTML='<div class=\'photo-placeholder-lg\'>FB</div>'">
+        </div>
+
+        <div class="about-bio">
+            <h2>Florimond Bodet</h2>
+            <p class="about-role">Étudiant BUT Science des Données — 1ère année</p>
+
+            <p>
+                Étudiant en BUT Science des Données, je développe mes compétences en analyse,
+                statistiques et visualisation à travers différents projets académiques.
+                Rigoureux et curieux, je m'intéresse à la manière dont les données peuvent
+                être exploitées pour aider à la prise de décision.
+            </p>
+
+            <div class="skills-row">
+                <span class="skill-pill">Python</span>
+                <span class="skill-pill">R</span>
+                <span class="skill-pill">SQL</span>
+                <span class="skill-pill">Power BI</span>
+                <span class="skill-pill">Excel</span>
+                <span class="skill-pill">Statistiques</span>
+                <span class="skill-pill">Régression</span>
+                <span class="skill-pill">Datavisualisation</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- TROIS BLOCS : centres d'intérêt / sport / futur -->
+    <div class="about-blocks reveal" style="transition-delay:0.1s;">
+
+        <!-- Centres d'intérêt -->
+        <div class="about-block">
+            <div class="about-block-header">
+                <span class="about-block-icon">🎯</span>
+                <h2>Centres d'intérêt</h2>
+            </div>
+            <div class="about-block-content">
+                <p>
+                    La data est au cœur de ma curiosité : j'aime comprendre comment des chiffres
+                    bruts peuvent raconter une histoire, révéler une tendance ou orienter une décision.
+                    Au-delà des études, je m'intéresse à la stratégie de course automobile — un domaine
+                    où l'analyse en temps réel peut faire la différence entre une victoire et un abandon.
+                </p>
+                <p>
+                    Je suis également attentif à l'actualité technologique, particulièrement aux
+                    avancées en intelligence artificielle et en traitement de la donnée.
+                </p>
+            </div>
+        </div>
+
+        <!-- Sport -->
+        <div class="about-block">
+            <div class="about-block-header">
+                <span class="about-block-icon">🏅</span>
+                <h2>Sport</h2>
+            </div>
+            <div class="about-block-content">
+                <p>
+                    J'ai pratiqué le <strong>judo</strong> et le <strong>rugby</strong> pendant plusieurs années —
+                    deux sports qui m'ont beaucoup apporté. Le judo m'a forgé sur la rigueur,
+                    la technique et la gestion de l'effort. Le rugby m'a appris l'esprit collectif,
+                    la communication et la résilience face à l'adversité.
+                </p>
+                <p>
+                    Ces valeurs — discipline, travail d'équipe, dépassement de soi — je les retrouve
+                    naturellement dans ma façon d'aborder les projets académiques et professionnels.
+                </p>
+            </div>
+        </div>
+
+        <!-- Futur -->
+        <div class="about-block about-block--accent">
+            <div class="about-block-header">
+                <span class="about-block-icon">🏎️</span>
+                <h2>Ce que je souhaite faire</h2>
+            </div>
+            <div class="about-block-content">
+                <p>
+                    Mon ambition est de travailler dans le <strong>sport automobile</strong>, et plus
+                    particulièrement dans l'endurance — WEC, IMSA ou tout autre championnat GT et
+                    prototype. La LMP2 sur ce portfolio n'est pas un hasard.
+                </p>
+                <p>
+                    Je vois dans la donnée un rôle central dans ce milieu : stratégie de course,
+                    télémétrie, performance des pilotes, optimisation des arrêts. C'est à cette
+                    intersection entre la passion et les compétences que je veux construire
+                    mon avenir professionnel.
+                </p>
+                <div class="future-pills">
+                    <span class="future-pill">Stratégie de course</span>
+                    <span class="future-pill">Télémétrie</span>
+                    <span class="future-pill">Data analyst sport</span>
+                    <span class="future-pill">WEC / IMSA</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+    <div class="footer-logo"><img src="FB_Logo_Black.png" alt="FB"></div>
+    <span class="footer-copy">© 2026 Florimond Bodet</span>
+</footer>
+
+<script src="scrollbar.js"></script>
+<script>
+const reveals = document.querySelectorAll('.reveal');
+const obs = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+}, { threshold: 0.1 });
+reveals.forEach(el => obs.observe(el));
+</script>
+</body>
+</html>
